@@ -8,13 +8,11 @@ import os
 budget_csv_path = os.path.join('.', 'Resources', 'budget_data.csv')
 
 # variables for output data
-
 changes = []
 greatest_inc = 0.0
 greatest_dec = 0.0
 g_inc_date = ""
 g_dec_date = ""
-
 
 # read file to gather data for analysis
 with open(budget_csv_path) as csvfile:
@@ -43,7 +41,7 @@ with open("financial_analysis.txt", "w") as text_file:
     print(f"Greatest Increase in Profits: {g_inc_date} ${greatest_inc}", file = text_file)
     print(f"Greatest Decrease in Profits: {g_dec_date} ${greatest_dec}", file = text_file)
     
-
+# Display summary in command line
 with open('test.txt', 'r') as text:
     print(text.read())
     
