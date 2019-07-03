@@ -39,7 +39,7 @@ with open("election_results.txt", "w") as text_file:
     print(f"Total Votes: {total_votes}", file = text_file)
     print("-----------------------------", file = text_file)
     for key, value in candidates.items():
-        print(key + ": " + str( "%.2f%%" % (value/total_votes)%100 ) + " (" + str(value) + ")", file = text_file)
+        print(key + ": " + str( "%.2f%%" % ((value/total_votes)%100)) + " (" + str(value) + ")", file = text_file)
     print("-----------------------------", file = text_file)        
     print("Winner: " + winner, file = text_file)
     print("-----------------------------", file = text_file)    
@@ -49,8 +49,3 @@ with open("election_results.txt", "w") as text_file:
 with open('election_results.txt', 'r') as text:
     print(text.read())
 
-
-
-
-# def print_line(file):
-#    print("-----------------------------", file = file)
