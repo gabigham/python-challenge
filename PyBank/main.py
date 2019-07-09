@@ -42,7 +42,7 @@ with open("financial_analysis.txt", "w") as text_file:
     print(f"Greatest Decrease in Profits: {g_dec_date} ${greatest_dec}", file = text_file)
     
 # Display summary in command line
-with open('test.txt', 'r') as text:
+with open('financial_analysis.txt', 'r') as text:
     print(text.read())
     
     
